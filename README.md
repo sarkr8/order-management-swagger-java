@@ -1,25 +1,29 @@
-# Clothing Store API - Gestión de Pedidos
+# Clothing Store Order Management API
 
-Este proyecto es una API REST desarrollada con **Java 17** y **Spring Boot 3** para gestionar pedidos de una tienda de ropa. Incluye documentación interactiva con **Swagger/OpenAPI**.
+API REST empresarial desarrollada sobre **Java 17** y **Spring Boot 3**, diseñada para la automatización, procesamiento y gestión del ciclo de vida de pedidos en plataformas de retail/e-commerce. El sistema incluye exposición semántica de recursos y documentación interactiva bajo el estándar **OpenAPI/Swagger**.
 
-## Tecnologías
-- **Java 17**
-- **Spring Boot 3**
-- **Spring Data JPA** (Persistencia)
-- **H2 Database** (Base de datos en memoria)
-- **Lombok** (Código limpio)
-- **Springdoc OpenAPI** (Documentación)
+## Stack Tecnológico y Arquitectura
+
+* **Runtime:** Java 17 (LTS)
+* **Framework Principal:** Spring Boot 3
+* **Persistencia & ORM:** Spring Data JPA / Hibernate
+* **Motor de Datos:** H2 Database Engine (Configurado para entornos de desarrollo y pruebas de integración)
+* **Documentación de API:** Springdoc OpenAPI v2
+* **Productividad:** Project Lombok (Aislamiento de boilerplate)
+
+## Arquitectura y Buenas Prácticas
+* **Diseño RESTful:** Cumplimiento estricto de convenciones HTTP y códigos de estado semánticos.
+* **Separación de Responsabilidades:** Arquitectura desacoplada en capas (Controller, Service, Repository).
+* **Gestión de Entornos:** Arquitectura preparada para migrar a motores productivos (PostgreSQL/MySQL) mediante la abstracción de Spring Data.
 
 ## Instalación y Ejecución
-1. Clonar el repositorio: `git clone https://github.com/tu-usuario/nombre-repo.git`
-2. Ejecutar con Maven: `./mvnw spring-boot:run` o desde tu IDE (IntelliJ).
 
-## Documentación (Swagger)
-Una vez ejecutada la aplicación, puedes acceder a la interfaz de Swagger para probar los endpoints en:
- [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+### Prerrequisitos
+* Java Development Kit (JDK) 17
+* Apache Maven 3.6+ o Wrapper incluido
 
-##  Endpoints Principales
-- `GET /api/orders`: Listar todos los pedidos.
-- `POST /api/orders`: Crear un nuevo pedido.
-- `PUT /api/orders/{id}`: Actualizar un pedido existente.
-- `DELETE /api/orders/{id}`: Eliminar un pedido.
+### Pasos para el despliegue local
+
+1. Clonar el repositorio:
+   ```bash
+   git clone [https://github.com/tu-usuario/nombre-repo.git](https://github.com/tu-usuario/nombre-repo.git)
